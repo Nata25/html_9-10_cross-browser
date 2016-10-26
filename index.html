@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
         <title>Pingbuller: Home page</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
         <link rel="stylesheet" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
         <!--[if lt IE 9]>
             <script src="js/html5shiv.js"></script>
-            <link rel="stylesheet" href="css/ie8.css">
+            <link rel="stylesheet" href="css/style-ie8.css">
         <![endif]-->
     </head>
     <body>
@@ -20,7 +21,7 @@
                 <img alt="Pingbuller Logo" src="img/logo.png">
             </object>
 
-            <nav class="header__nav nav show">
+            <nav class="header__nav nav">
                 <a class="nav__item  nav__item_main nav__item_active" href="#">Home</a>
                 <a class="nav__item nav__item_main" href="#">About</a>
                 <a class="nav__item nav__item_main" href="#">Blog</a>
@@ -49,7 +50,7 @@
                     <figure class="slider__media">
                         <img class="slider__image" src="img/phones.png" alt="iPhone image">
                         <a class="slider__play-link" href="#">
-                            <button class="play-button" title="play">&nbsp;</button>
+                            <div class="play-button" title="play">&nbsp;</div>
                         </a>
                     </figure>
 
@@ -68,18 +69,18 @@
                 </div>
 
                 <div class="slider__switches">
-                    <label class="switches__custom-radio slider__radio" for="slide4"></label>
-                    <label class="switches__custom-radio slider__radio" for="slide3"></label>
-                    <label class="switches__custom-radio slider__radio" for="slide2"></label>
-                    <label class="switches__custom-radio slider__radio" for="slide1"></label>
+                    <label class="switches__custom-radio" for="slide1"></label>
+                    <label class="switches__custom-radio" for="slide2"></label>
+                    <label class="switches__custom-radio" for="slide3"></label>
+                    <label class="switches__custom-radio" for="slide4"></label>
                 </div>
 
             </section>
 
-            <div class="columns columns_violet">
+            <section class="columns columns_violet">
                 <!-- first column -->
-                <acticle class="entity entity_white columns__col">
-                    <h3 class="entity__heading entity__heading_white entity__heading_instruments">About our company</h1>
+                <article class="entity entity_white columns__col">
+                    <h3 class="entity__heading entity__heading_white entity__heading_instruments">About our company</h3>
                     <p class="entity__text entity__text_white">
                         Nunc turpis neque, feugiat eget eleifend et,
                         lacinia non neque. Praesent rhoncus ultrices po-suere.
@@ -88,11 +89,11 @@
                     <a href="#" class="entity__link entity__link_white">
                         Read more
                     </a>
-                </acticle>
+                </article>
 
                 <!-- second column -->
-                <acticle class="entity entity_white columns__col">
-                    <h3 class="entity__heading entity__heading_chat">About our company</h1>
+                <article class="entity entity_white columns__col">
+                    <h3 class="entity__heading entity__heading_chat">About our company</h3>
                     <p class="entity__text entity__text_white">
                         Nunc turpis neque, feugiat eget eleifend et,
                         lacinia non neque. Praesent rhoncus ultrices po-suere.
@@ -101,11 +102,11 @@
                     <a href="#" class="entity__link entity__link_white">
                         Read more
                     </a>
-                </acticle>
+                </article>
 
                 <!-- third column -->
-                <acticle class="entity entity_white columns__col">
-                    <h3 class="entity__heading entity__heading_white entity__heading_music">About our company</h1>
+                <article class="entity entity_white columns__col">
+                    <h3 class="entity__heading entity__heading_white entity__heading_music">About our company</h3>
                     <p class="entity__text entity__text_white">
                         Nunc turpis neque, feugiat eget eleifend et,
                         lacinia non neque. Praesent rhoncus ultrices po-suere.
@@ -114,8 +115,9 @@
                     <a href="#" class="entity__link entity__link_white">
                         Read more
                     </a>
-                </acticle>
-            </div>
+                </article>
+
+            </section>
 
             <div class="wrapper">
 
@@ -148,19 +150,19 @@
                 <h3 class="entity__heading updates__main-heading">Recent updates</h3>
 
                 <article>
-                    <img class="updates__image" src="img/image1.png">
+                    <img class="updates__image" alt="updates image 1" src="img/image1.png">
                     <h4 class="updates__heading">Nunc turpis neque feugiat eget</h4>
                     <p class="updates__text">Posted by Admin on March 13 2012 in Recent News</p>
                 </article>
 
                 <article>
-                    <img class="updates__image" src="img/image2.png">
+                    <img class="updates__image" alt="updates image 1" src="img/image2.png">
                     <h4 class="updates__heading">Nunc turpis neque feugiat eget</h4>
                     <p class="updates__text">Posted by Admin on March 13 2012 in Category</p>
                 </article>
 
                 <article>
-                    <img class="updates__image" src="img/image3.png">
+                    <img class="updates__image" alt="updates image 1" src="img/image3.png">
                     <h4 class="updates__heading">Nunc turpis neque feugiat eget</h4>
                     <p class="updates__text">Posted by Admin on March 13 2012 in Blog Updates</p>
                 </article>
@@ -182,7 +184,7 @@
 
             <section class="articles columns">
                 <article class="entity columns__col_wide">
-                    <h3 class="entity__heading entity__heading_big">Pingbull<span class="entity__heading_grey">er</span></h2>
+                    <h3 class="entity__heading entity__heading_big">Pingbull<span class="entity__heading_grey">er</span></h3>
                     <h5 class="entity__subheading">Copyright 2013, Pingbull AS</h5>
                     <p class="entity__text entity__text_grey">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                         Praesent rhoncus ultrices posuere. Pellentesque
@@ -191,7 +193,7 @@
                 </article>
 
                 <article class="entity columns__col_wide">
-                    <h3 class="entity__heading">Recent comments</h2>
+                    <h3 class="entity__heading">Recent comments</h3>
                     <p class="entity__text entity__text_grey">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                         Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget
                         nisi convallis auctor. Nam vitae lectus eu libero pellentesque
@@ -200,7 +202,7 @@
                 </article>
 
                 <article class="entity columns__col_wide">
-                    <h3 class="entity__heading">News categories</h2>
+                    <h3 class="entity__heading">News categories</h3>
                     <p class="entity__text entity__text_grey">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                         Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget
                         nisi convallis auctor. Nam vitae lectus eu libero pellentesque
