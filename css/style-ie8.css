@@ -79,6 +79,12 @@ body {
     opacity: .8;
 }
 
+.slider__switches {
+    width: 630px;
+    margin: 93px auto;
+    text-align: right;
+}
+
 .switches__plain-radio {
     display: none;
 }
@@ -87,11 +93,15 @@ body {
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin: 2px;
+    margin: 1px;
     border-radius: 50%;
     background-color: #000;
     opacity: .35;
     box-sizing: border-box;
+}
+
+.switches__custom-radio:hover {
+    opacity: .4;
 }
 
 /*ie8 styles*/
@@ -152,10 +162,26 @@ body {
     top: 410px;
     left: 74.8%;
     border: 0;
-    background: url('../img/button.jpg') center center no-repeat;
+    background: url('../img/button.png') center center no-repeat;
     z-index: 6;
 }
 
 .play-button {
     display: none;
+}
+
+.slider__switches {
+    margin: 143px auto;
+}
+
+.switches__custom-radio {
+    background: url('../img/radio.png')
+}
+
+.switches__custom-radio[for='slide2'] {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    top: 1px;
+    background: url('../img/radio_custom.png');
 }
