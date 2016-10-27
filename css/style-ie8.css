@@ -210,6 +210,41 @@ body {
     opacity: .9;
 }
 
+.updates__image {
+    margin: 14px 16px 3px 29px;
+    float: left;
+}
+
+.updates__main-heading {
+    margin-left: 28px;
+}
+
+.updates__heading {
+    display: inline-block;
+    width: 273px;
+    margin-top: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 104%;
+    font-weight: bold;
+}
+
+.updates__text {
+    margin-top: 5px;
+    margin-bottom: 4px;
+    font-size: 99%;
+    line-height: 24px;
+}
+
+.updates__link {
+    margin: 18px 20px 17px 9px;
+    float: right;
+    color: #454545;
+    font-family: 'League Gothic Regular', sans-serif;
+    font-size: 113%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 /*ie8 styles*/
 
 .logo {
@@ -412,6 +447,7 @@ body {
     position: relative;
     top: 55px;
     left: 30px;
+    color: #454545;
     z-index: 1;
 }
 
@@ -421,20 +457,19 @@ body {
 }
 
 .entity_cite__text {
-    position: relative;
-    display: inline-block; /* needed??? */
+    position: absolute;
     width: 370px;
     height: 230px;
     padding: 50px 30px 10px;
-    top: 0;
+    top: 75px;
     left: 0;
     background-image: url('../img/cite-bg.png');
 }
 
 .entity__switches {
-    position: relative;
-    top: 75px;
-    left: -20%;
+    position: absolute;
+    top: 375px;
+    left: 15%;
 }
 
 .switches__custom-radio_light {
@@ -447,4 +482,35 @@ body {
 
 .switches__custom-radio_light[for='text2'] {
     background-image: url('../img/radio-white-checked.png');
+}
+
+.updates__main-heading,
+.updates__image {
+    margin-left: 50%;
+}
+
+.updates__main-heading {
+    margin-top: 29px;
+}
+
+.updates__image {
+    margin-top: 20px;
+}
+
+.updates__text {
+    font-family: 'Open Sans', sans-serif;
+    top: 10px;
+}
+
+.updates__link {
+    position: relative;
+    top: 0;
+    right: 20px;
+
+}
+
+.updates__main-heading,
+.updates__heading,
+.updates__text {
+    color: #454545;
 }
