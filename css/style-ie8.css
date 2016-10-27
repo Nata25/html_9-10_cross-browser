@@ -231,7 +231,8 @@ body {
     width: 78px;
     height: 76px;
     top: 410px;
-    left: 74.8%;
+    left: 63%;
+    margin-left: 135px;
     border: 0;
     background: url('../img/button.png') center center no-repeat;
     z-index: 6;
