@@ -78,7 +78,7 @@ body {
     margin-bottom: 168px;
     background: rgba(0, 0, 0, .2);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#000,endColorstr=#000);
-    filter: alpha(opacity = 20);
+    filter: alpha(opacity = 90);
     zoom: 1;
 }
 
@@ -205,9 +205,11 @@ body {
 }
 
 .slider__switches {
+    position: relative;
     width: 630px;
     margin: 93px auto;
     text-align: right;
+    z-index: 3;
 }
 
 .switches__plain-radio {
