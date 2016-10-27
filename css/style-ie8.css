@@ -134,10 +134,10 @@ body {
 
 .columns_violet {
     border-top: 1px solid #33253a;
-    border-bottom: 1px solid #fff;
+    /*border-bottom: 1px solid #fff;*/
     background: linear-gradient(to top, #322539 0%, #745083 100%);
     text-shadow: .5px 1px 0 #0f1518;
-    box-shadow: 0 14px 25px -15px rgba(0, 0, 0, .33);
+    /*box-shadow: 0 14px 25px -15px rgba(0, 0, 0, .33);*/
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#745083', EndColorStr='#322539')"; /* IE8 */
     zoom: 1;
 }
@@ -166,7 +166,7 @@ body {
 
 .entity__link {
     margin: 17px 9px;
-    /*float: right;*/
+    float: right;
     -moz-transition: text-shadow .3s linear;
     -webkit-transition: text-shadow .3s linear;
     transition: text-shadow .3s linear;
@@ -184,7 +184,6 @@ body {
     top: 15px;
     margin-right: 5%;
     margin-left: 15%;
-
 }
 
 .nav__item {
@@ -283,27 +282,8 @@ body {
 }
 
 .columns_violet {
-    height: 500px;
-}
-
-.entity__heading_white,
-.entity__text_white,
-.entity__link_white {
-    display: inline-block;
-    position: relative;
-    width: 226px;
-    text-align: left;
-    vertical-align: top;
-}
-
-.entity__heading_white,
-.entity__text_white,
-.entity__link_white {
-    color: #fff;
-}
-
-.entity__heading {
-    margin-top: 75px;
+    height: 355px;
+    border-bottom: 0;
 }
 
 .entity__text {
@@ -314,7 +294,76 @@ body {
     text-align: left;
 }
 
+.entity__heading_white,
+.entity__text_white,
 .entity__link_white {
-    top: 240px;
-    left: -340px;
+    position: absolute;
+    width: 226px;
+    color: #fff;
+    text-align: left;
+    vertical-align: top;
+}
+
+.columns__col1 {
+    left: 10%;
+}
+
+.columns__col2 {
+    left: 40%;
+}
+
+.columns__col3 {
+    left: 70%;
+}
+
+.entity__heading_white {
+    top: 75px;
+    padding-left: 50px;
+}
+
+.entity__heading_white.columns__col1 {
+    left: 6%;
+}
+
+.entity__heading_white.columns__col2 {
+    left: 36%;
+}
+
+.entity__heading_white.columns__col3 {
+    left: 66%;
+}
+
+.entity__text_white {
+    top: 100px;
+}
+
+.entity__link_white {
+    top: 250px;
+}
+
+.entity__link_white.columns__col1 {
+    left: 20%;
+}
+
+.entity__link_white.columns__col2 {
+    left: 50%;
+}
+
+.entity__link_white.columns__col3 {
+    left: 80%;
+}
+
+.entity__heading_instruments {
+    background: url('../img/instruments.png');
+    background-repeat: no-repeat;
+}
+
+.entity__heading_chat {
+    background: url('../img/chat.png');
+    background-repeat: no-repeat;
+}
+
+.entity__heading_music {
+    background: url('../img/music.png');
+    background-repeat: no-repeat;
 }
