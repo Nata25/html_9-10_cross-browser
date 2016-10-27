@@ -205,8 +205,9 @@ body {
 }
 
 .slider__switches {
-    width: 622px;
+    width: 630px;
     margin: 93px auto;
+    text-align: right;
 }
 
 .switches__plain-radio {
@@ -217,25 +218,21 @@ body {
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin: 2px;
+    margin: 1px;
     border-radius: 50%;
     background-color: #000;
     opacity: .35;
     box-sizing: border-box;
 }
 
-.slider__radio {
-    float: right;
-}
-
 .switches__custom-radio:hover {
     opacity: .4;
 }
 
-#slide1:checked ~ .slider__switches .switches__custom-radio:nth-child(4),
-#slide2:checked ~ .slider__switches .switches__custom-radio:nth-child(3),
-#slide3:checked ~ .slider__switches .switches__custom-radio:nth-child(2),
-#slide4:checked ~ .slider__switches .switches__custom-radio:nth-child(1) {
+#slide1:checked ~ .slider__switches .switches__custom-radio:nth-child(1),
+#slide2:checked ~ .slider__switches .switches__custom-radio:nth-child(2),
+#slide3:checked ~ .slider__switches .switches__custom-radio:nth-child(3),
+#slide4:checked ~ .slider__switches .switches__custom-radio:nth-child(4) {
     border: 2px solid #000;
     background-color: #fff;
     opacity: 1;
@@ -249,8 +246,8 @@ body {
 .slider__label {
     position: absolute;
     top: -216px;
-    width: 29px;
-    height: 41px;
+    width: 35px;
+    height: 46px;
     -moz-transition: opacity 1s ease-out, top .9s ease-out;
     -webkit-transition: opacity 1s ease-out, top .9s ease-out;
     transition: opacity 1s ease-out, top .9s ease-out;
@@ -1061,7 +1058,7 @@ body {
     }
 
     .slider__sub-title {
-        width: 194px;
+        width: 192px;
     }
 
     .slider__media {
@@ -1138,7 +1135,7 @@ body {
     }
 
     .updates__text {
-        width: 220px;
+        width: 218px;
     }
 
     .updates__link {
