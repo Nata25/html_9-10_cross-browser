@@ -306,16 +306,20 @@
 
 .columns__col_wide ~ .entity__heading.columns__col2,
 .columns__col_wide ~ .entity__text.columns__col2 {
-    top: -200px;
-}
-
-.columns__col_wide ~ .entity__text.columns__col2 {
-    margin-bottom: -200px;
+    top: -135px;
 }
 
 .columns__col_wide ~ .entity__heading.columns__col3,
 .columns__col_wide ~ .entity__text.columns__col3 {
-    top: -260px;
+    top: -140px;
+}
+
+.columns__col_wide ~ .entity__text.columns__col1 {
+    margin-bottom: -70px;
+}
+
+.columns__col_wide ~ .entity__text.columns__col2 {
+    margin-bottom: -250px;
 }
 
 .columns__col_wide ~ .entity__text.columns__col3 {
@@ -324,14 +328,13 @@
 
 .footer ~ .wrapper {
     height: 120px;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 .footer__copy {
     position: absolute;
-    top: 2270px;
-    padding-top: 80px;
-    padding-right: 20px;
+    top: 2170px;
+    padding-right: 10%;
     background-color: #ececec;
     background-image: url('../img/bg-footer.jpg');
     background-repeat: no-repeat;
@@ -342,7 +345,7 @@
 
 .nav__item_small {
     position: relative;
-    top: 100px;
+    top: 130px;
     margin: 15px;
     z-index: 4;
 }
