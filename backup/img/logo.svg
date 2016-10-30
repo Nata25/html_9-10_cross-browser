@@ -34,7 +34,7 @@
 
       .cls-2 {
         filter: url(#filter-2);
-        fill: #553d60;
+        fill: #c3e54b;
       }
       ]]>
 

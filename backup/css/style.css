@@ -1,4 +1,4 @@
-@font-face {
+    @font-face {
     font-family: 'League Gothic Regular';
     src: url('../fonts/leaguegothic-regular-webfont.eot'); /* IE9+ Compat Modes */
     src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -78,7 +78,7 @@ body {
     margin-bottom: 168px;
     background: rgba(0, 0, 0, .2);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#000,endColorstr=#000);
-    filter: alpha(opacity = 90);
+    filter: alpha(opacity = 20);
     zoom: 1;
 }
 
@@ -205,11 +205,8 @@ body {
 }
 
 .slider__switches {
-    position: relative;
-    width: 630px;
+    width: 622px;
     margin: 93px auto;
-    text-align: right;
-    z-index: 3;
 }
 
 .switches__plain-radio {
@@ -220,21 +217,25 @@ body {
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin: 1px;
+    margin: 2px;
     border-radius: 50%;
     background-color: #000;
     opacity: .35;
     box-sizing: border-box;
 }
 
+.slider__radio {
+    float: right;
+}
+
 .switches__custom-radio:hover {
     opacity: .4;
 }
 
-#slide1:checked ~ .slider__switches .switches__custom-radio:nth-child(1),
-#slide2:checked ~ .slider__switches .switches__custom-radio:nth-child(2),
-#slide3:checked ~ .slider__switches .switches__custom-radio:nth-child(3),
-#slide4:checked ~ .slider__switches .switches__custom-radio:nth-child(4) {
+#slide1:checked ~ .slider__switches .switches__custom-radio:nth-child(4),
+#slide2:checked ~ .slider__switches .switches__custom-radio:nth-child(3),
+#slide3:checked ~ .slider__switches .switches__custom-radio:nth-child(2),
+#slide4:checked ~ .slider__switches .switches__custom-radio:nth-child(1) {
     border: 2px solid #000;
     background-color: #fff;
     opacity: 1;
@@ -248,8 +249,8 @@ body {
 .slider__label {
     position: absolute;
     top: -216px;
-    width: 35px;
-    height: 46px;
+    width: 29px;
+    height: 41px;
     -moz-transition: opacity 1s ease-out, top .9s ease-out;
     -webkit-transition: opacity 1s ease-out, top .9s ease-out;
     transition: opacity 1s ease-out, top .9s ease-out;
@@ -939,10 +940,8 @@ body {
     }
 
     .slider__switches {
-        position: relative;
         width: 97px;
         margin-top: 23px;
-        z-index: 3;
     }
 
     .columns__col,
@@ -1062,7 +1061,7 @@ body {
     }
 
     .slider__sub-title {
-        width: 192px;
+        width: 194px;
     }
 
     .slider__media {
@@ -1139,7 +1138,7 @@ body {
     }
 
     .updates__text {
-        width: 218px;
+        width: 220px;
     }
 
     .updates__link {
