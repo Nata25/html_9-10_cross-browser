@@ -592,13 +592,17 @@ body {
 }
 
 .partners__logo {
-    margin: 30px 35px 35px;
+    margin: 30px 30px 35px;
     vertical-align: middle;
     text-align: center;
 }
 
 .partners__logo_first {
     margin-left: 15%;
+}
+
+.articles {
+    background-color: #ececec;
 }
 
 .columns__col_wide ~ .entity__heading,
@@ -625,7 +629,7 @@ body {
 }
 
 .columns__col_wide ~ .entity__text.columns__col3 {
-    margin-bottom: -250px;
+    margin-bottom: -180px;
 }
 
 .footer ~ .wrapper {
@@ -635,11 +639,10 @@ body {
 
 .footer__copy {
     position: absolute;
-    width: 100%;
-    top: 2200px;
+    top: 2270px;
     padding-top: 80px;
     padding-right: 20px;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
     background-color: #ececec;
     background-image: url('../img/bg-footer.jpg');
     background-position: center bottom;
