@@ -1,4 +1,4 @@
-    @font-face {
+@font-face {
     font-family: 'League Gothic Regular';
     src: url('../fonts/leaguegothic-regular-webfont.eot'); /* IE9+ Compat Modes */
     src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -10,11 +10,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-/** {
-    margin: 0;
-    padding: 0;
-}*/
 
 body {
     background: url('../img/bg.jpg') top center no-repeat;
@@ -966,8 +961,10 @@ body {
     }
 
     .slider__switches {
+        position: relative;
         width: 97px;
         margin-top: 23px;
+        z-index: 3;
     }
 
     .columns__col,
