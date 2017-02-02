@@ -940,9 +940,9 @@ body {
 
     .slider__switches {
         position: relative;
-        width: 97px;
+        width: 100px;
         margin-top: 23px;
-        z-index: 3;
+        z-index: 4;
     }
 
     .columns__col,
