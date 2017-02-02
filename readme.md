@@ -1,4 +1,4 @@
-# Cross Browser page
+# Cross Browser Page
 
 IE8+, Opera, Safari, Chrome, Firefox.
 
